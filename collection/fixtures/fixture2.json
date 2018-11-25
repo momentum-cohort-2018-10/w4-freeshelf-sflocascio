@@ -1,0 +1,47 @@
+[
+    {
+      "model": "collection.book",
+      "fields": {
+        "name": "Crockford's JavaScript",
+        "author": "Douglas Crockford",
+        "catagory": "Javascript",
+        "description": "Crockford's JavaScript by Douglas Crockford",
+        "date_added": "2018-06-10",
+        "slug": "douglas-crockford"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Javascript Enlightenment",
+            "author": "Cody Lindley",
+            "catagory": "Javascript",
+            "description": "Javascript Enlightenment by Cody Lindley",
+            "date_added": "2018-01-09",
+            "slug": "cody-lindley"    
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Learning Javascript Design Patterns",
+            "author": "Addy Osmani",
+            "catagory": "Javascript",
+            "description": "Learning Javascript Design Patterns",
+            "date_added": "2018-09-10",
+            "slug": "addy-osmani"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Oh My JS",
+            "author": "Azat Mardanov",
+            "catagory": "Javascript",
+            "description": "Oh My JS by Azat Mardanov",
+            "date_added": "2018-08-10",
+            "slug": "azat-mardanov"
+        
+      }
+    }
+  ]

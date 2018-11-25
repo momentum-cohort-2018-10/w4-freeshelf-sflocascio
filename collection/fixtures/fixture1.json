@@ -1,0 +1,47 @@
+[
+    {
+      "model": "collection.book",
+      "fields": {
+        "name": "A Guide To Python's Magic Methods",
+        "author": "Rafe Kettler",
+        "catagory": "Python",
+        "description": "A Guide To Python's Magic Methods by Rafe Kettler",
+        "date_added": "2018-11-10",
+        "slug": "magic-methods"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Dive Into Python 3",
+            "author": "Mark Pilgrim",
+            "catagory": "Python",
+            "description": "Dive Into Python 3 by Mark Pilgrim",
+            "date_added": "2018-09-10",
+            "slug": "dive"    
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Learn Ruby First",
+            "author": "Frederick John",
+            "catagory": "Ruby",
+            "description": "Learn Ruby First by Frederick John",
+            "date_added": "2018-07-10",
+            "slug": "learn-ruby-first"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Learn To Program",
+            "author": "Chris Pine",
+            "catagory": "Ruby",
+            "description": "Learn To Program by Chris Pine",
+            "date_added": "2018-11-10",
+            "slug": "learn-to-program"
+        
+      }
+    }
+  ]

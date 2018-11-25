@@ -1,0 +1,47 @@
+[
+    {
+      "model": "collection.book",
+      "fields": {
+        "name": "How To Make Mistakes In Python",
+        "author": "Al Sweigart",
+        "catagory": "Python",
+        "description": "How To Make Mistakes In Python by Al Sweigart",
+        "date_added": "2018-07-10",
+        "slug": "al-sweigart"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Introduction To Python",
+            "author": "Kracekumar",
+            "catagory": "Python",
+            "description": "Introduction To Python by Kracekumar",
+            "date_added": "2018-06-10",
+            "slug": "kracekumar"    
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "Learn Ruby The Hard Way",
+            "author": "Zed Shaw",
+            "catagory": "Ruby",
+            "description": "Learn Ruby The Hard Way by Zed Shaw",
+            "date_added": "2018-05-10",
+            "slug": "zed-shaw"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "The Unofficial Ruby Usage Guide",
+            "author": "Ian Macdonald",
+            "catagory": "Ruby",
+            "description": "The Unofficial Ruby Usage Guide",
+            "date_added": "2018-07-10",
+            "slug": "ian-macdonald"
+        
+      }
+    }
+  ]
