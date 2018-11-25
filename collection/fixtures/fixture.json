@@ -1,0 +1,26 @@
+[
+    {
+      "model": "collection.book",
+      "fields": {
+        "name": "John",
+        "author": "Lennon",
+        "catagory": "Python",
+        "description": "March",
+        "date_added": "2018-11-10",
+        "slug": "John"
+      }
+    },
+    {
+        "model": "collection.book",
+        "fields": {
+            "name": "New",
+            "author": "kmds",
+            "catagory": "Ruby",
+            "description": "June",
+            "date_added": "2018-11-10",
+            "slug": "New"
+        
+      }
+    }
+  ]
+

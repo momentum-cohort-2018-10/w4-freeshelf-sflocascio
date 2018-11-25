@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+   
+    {% for book in books %}
+        <h2><a href="{% url 'book_detail' slug=book.slug %}">
+            {{ book.name }}
+        </a></h2>
+        <h3>Author {{ book.name }}</h3>
+        <p>{{ book.description }}</p>
+        <p>Date Added: {{ book.date_added }}</p>
+        <p>Catagory= {{ book.catagory }}</p>
+    {% endfor %}
+
+
+{% endblock content %}
