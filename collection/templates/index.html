@@ -9,14 +9,34 @@
 {% block content %}
    
     {% for book in books %}
-        <h2><a href="{% url 'book_detail' slug=book.slug %}">
-            {{ book.name }}
-        </a></h2>
-        <h3>Author {{ book.author }}</h3>
-        <p>{{ book.description }}</p>
-        <p>Date Added: {{ book.date_added }}</p>
-        <p>Catagory= {{ book.catagory }}</p>
+    <div class="hero-head">
+        <div class="has-background-grey-lighter columns">
+        
+            <div class="column">
+            
+                <div class="box">
+                    <div class="card">
+                        <h2 class="title"><a href="{% url 'book_detail' slug=book.slug %}">
+                            {{ book.name }}
+                        </a></h2>
+                            <h3 class="subtitle has-text-grey is-italic">Author: {{ book.author }}</h3>
+                            <p class="subtitle">Catagory: {{ book.catagory }}</p>
+                            {% comment %} <p>{{ book.description }}</p> {% endcomment %}
+                            <p>Date Added: {{ book.date_added }}</p>
+                            
+                                <footer class="card-footer">
+                                    <div class="card-footer-item">
+                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-success">more info</a>
+                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-info">like</a>
+                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-danger">read book online</a>
+                                            
+                                    </div>
+                            </div>
+                        </div>
+                </div>            
+            </div>    
+        </div>
     {% endfor %}
-
+    
 
 {% endblock content %}

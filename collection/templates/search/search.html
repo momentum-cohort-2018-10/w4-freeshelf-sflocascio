@@ -5,19 +5,21 @@
 
 
 {% block content %}
-    <h1>
+<div class="box">
+
+    <h1 class="title is-1">
         Browse Books{% if initial %} Starting with
         '{{ initial|title }}'{% endif %}
     </h1>
-
+    <h2 class="title">
     {% for letter in 'abcdefghijklmnopqrstuvwxyz' %}
-    
+
     <a href="{% url 'browse_by_name' initial=letter %}"
         {% if initial == letter %}class="active"{% endif %}>
         {{ letter|upper }}
     </a>
     {% endfor %}
-
+    </h2>
     <ul>
         {% for book in books %}
         <li><a href="{% url 'book_detail' slug=book.slug %}">
@@ -27,4 +29,6 @@
         <li>Sorry, no results!</li>
         {% endfor %}
     </ul>
+
+</div>
 {% endblock content %}

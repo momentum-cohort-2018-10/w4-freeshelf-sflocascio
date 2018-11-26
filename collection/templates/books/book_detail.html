@@ -7,10 +7,21 @@
 
 
 {% block content %}
+<body class="has-background-grey-lighter is-bold">
+    <div class= "box">
+        <h1 class="title is-1">{{ book.name }}</h1>
+        <h3 class="subtitle">Author: {{ book.author }}</h3>
+        <p>{{ book.description }}</p>
+        
+        <footer class="card-footer">
+            <div class="card-footer-item">
+                <a href="{% url 'home' %}" class="button is-success">back</a>
+                <a href="{% url 'book_detail' slug=book.slug %}" class="button is-info">like</a>
+                <a href="{% url 'book_detail' slug=book.slug %}" class="button is-danger">read book online</a>
+                    
+            </div>
 
-    <h1>{{ book.name }}</h1>
-    <p>{{ book.description }}</p>
-    <h3>Author {{ book.author }}</h3>
-
+    </div>
+</body>
 
 {% endblock content %}

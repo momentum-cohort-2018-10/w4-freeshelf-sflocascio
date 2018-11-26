@@ -7,21 +7,62 @@
             Freeshelf project
         {% endblock title %}
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     {% block header %} {% endblock header %}
     </head>
     <body>
-        <header>
-            <h1> FreeShelf </h1>
-            <nav>
-                <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-                <li><a href="{% url 'browse' %}">Browse</a></li>
-                </ul>
-            <nav>
-        </header>
+    
+    
+        <header class="hero is-primary is-bold is-medium">
+        
+            <div class="hero-head">
+            
+            
+            <nav class="navbar">
+            
+            <div class="container">
+                <h1 class="title is-1"> FreeShelf </h1>
+                    <i class="fas fa-book-open"></i>
+                <h2 class="subtitle"> Your online coding book resource </h2> 
+                <div class="navbar-brand">
+                {% comment %} <a class="navbar-item">
+                    
+                    {% comment %} <img src="https://banner2.kisspng.com/20180319/ijw/kisspng-black-white-computer-icons-book-png-book-icon-5ab02df11585d6.9013344215214955370882.jpg" alt="Logo"> {% endcomment %}
+                {% comment %} </a> {% endcomment %}
+                
+ 
+                    </div>
+                    <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="{% url 'home' %}" class="navbar-item is-active">
+                            <i class="fas fa-home"></i>
+                        HOME
+                        </a>
+                        <a href="{% url 'browse' %}" class="navbar-item">
+                        Browse
+                        </a>
+                        <a class="navbar-item">
+                        Featured
+                        </a>
+                        <span class="navbar-item">
+                        <a class="button is-primary is-inverted">
+                            <span class="icon">
+                            <i class="fas fa-check-square"></i>
+                            </span>
+                            <span>login</span>
+                        </a>
+                    </div>
+                            {% comment %} <ul>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'browse' %}">Browse</a></li>
+                            </ul> {% endcomment %}
+                        </nav>
+                        </div>
+                    </header>
         {% block content %}{% endblock content%}
         {% block footer %}{% endblock footer%}
 </body>
