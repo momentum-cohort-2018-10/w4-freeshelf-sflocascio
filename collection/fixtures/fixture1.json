@@ -7,7 +7,8 @@
         "catagory": "Python",
         "description": "A Guide To Python's Magic Methods by Rafe Kettler",
         "date_added": "2018-11-10",
-        "slug": "magic-methods"
+        "slug": "magic-methods",
+        "link": "https://rszalski.github.io/magicmethods/"
       }
     },
     {
@@ -18,7 +19,8 @@
             "catagory": "Python",
             "description": "Dive Into Python 3 by Mark Pilgrim",
             "date_added": "2018-09-10",
-            "slug": "dive"    
+            "slug": "dive",
+            "link": "https://www.amazon.com/Dive-into-Python-Mark-Pilgrim/dp/1430224150"    
       }
     },
     {
@@ -29,7 +31,8 @@
             "catagory": "Ruby",
             "description": "Learn Ruby First by Frederick John",
             "date_added": "2018-07-10",
-            "slug": "learn-ruby-first"
+            "slug": "learn-ruby-first",
+            "link": "https://www.learnruby.today/"
       }
     },
     {
@@ -40,7 +43,8 @@
             "catagory": "Ruby",
             "description": "Learn To Program by Chris Pine",
             "date_added": "2018-11-10",
-            "slug": "learn-to-program"
+            "slug": "learn-to-program",
+            "link": "https://pine.fm/LearnToProgram/"
         
       }
     }

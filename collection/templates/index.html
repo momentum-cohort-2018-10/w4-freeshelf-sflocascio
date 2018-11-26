@@ -24,11 +24,12 @@
                             {% comment %} <p>{{ book.description }}</p> {% endcomment %}
                             <p>Date Added: {{ book.date_added }}</p>
                             
+                            
                                 <footer class="card-footer">
                                     <div class="card-footer-item">
-                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-success">more info</a>
-                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-info">like</a>
-                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-danger">read book online</a>
+                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-rounded is-primary">more info</a>
+                                        <a href="{% url 'book_detail' slug=book.slug %}" class="button is-rounded is-info">like</a>
+                                        <a href="{{ book.link }}" target="_blank" class="button is-rounded is-danger">read book online</a>
                                             
                                     </div>
                             </div>

@@ -7,7 +7,8 @@
         "catagory": "Python",
         "description": "How To Make Mistakes In Python by Al Sweigart",
         "date_added": "2018-07-10",
-        "slug": "al-sweigart"
+        "slug": "al-sweigart",
+        "link": "https://www.oreilly.com/programming/free/files/how-to-make-mistakes-in-python.pdf"
       }
     },
     {
@@ -18,7 +19,8 @@
             "catagory": "Python",
             "description": "Introduction To Python by Kracekumar",
             "date_added": "2018-06-10",
-            "slug": "kracekumar"    
+            "slug": "kracekumar",
+            "link": "http://kracekumar.com/post/71171551647/introduction-to-python"    
       }
     },
     {
@@ -29,7 +31,8 @@
             "catagory": "Ruby",
             "description": "Learn Ruby The Hard Way by Zed Shaw",
             "date_added": "2018-05-10",
-            "slug": "zed-shaw"
+            "slug": "zed-shaw",
+            "link": "https://learnrubythehardway.org/book/"
       }
     },
     {
@@ -40,7 +43,8 @@
             "catagory": "Ruby",
             "description": "The Unofficial Ruby Usage Guide",
             "date_added": "2018-07-10",
-            "slug": "ian-macdonald"
+            "slug": "ian-macdonald",
+            "link": "http://www.caliban.org/ruby/rubyguide.shtml"
         
       }
     }
