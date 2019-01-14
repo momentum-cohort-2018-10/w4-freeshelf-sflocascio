@@ -1,14 +1,105 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
 
-{% block title %}
-    Homepage - {{ block.super }}
-{% endblock title %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding Service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 80%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
 
 
-{% block content %}
+
+
+  <body>
+    
+      
+       <input type="hidden" id="myVar" name="variable" value="{{ address }}">
+
+      
+
+    
+    <div id="map"></div>
+   <script type="text/javascript">
+      var geocoder;
+      var map;
+      var address = document.getElementById("myVar").value;
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: 35.9940, lng: 78.8986}
+        });
+        geocoder = new google.maps.Geocoder();
+        codeAddress(geocoder, map);
+      }
+
+      function codeAddress(geocoder, map) {
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: map,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwBrdxdADn8cNh-cCxJxKfM8D4rSJ5-SE&callback=initMap">
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
     {% for book in books %}
+   
     <div class="hero-head">
         <div class="has-background-grey-lighter columns">
         
@@ -23,6 +114,7 @@
                             <p class="subtitle">Catagory: {{ book.catagory }}</p>
                             {% comment %} <p>{{ book.description }}</p> {% endcomment %}
                             <p>Date Added: {{ book.date_added }}</p>
+                            <p>Address: {{ book.address }}</p>
                             
                             
                                 <footer class="card-footer">
@@ -39,5 +131,3 @@
         </div>
     {% endfor %}
     
-
-{% endblock content %}

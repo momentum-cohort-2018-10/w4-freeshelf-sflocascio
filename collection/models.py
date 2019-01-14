@@ -16,6 +16,7 @@ class Book(models.Model):
     date_added = models.DateField(auto_now=False, auto_now_add=True)
     slug = models.SlugField(max_length=140, unique=True)
     link = models.CharField(max_length=255, null=True, blank=False)
+    address = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return self.name

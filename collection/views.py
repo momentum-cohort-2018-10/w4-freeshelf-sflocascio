@@ -7,9 +7,12 @@ from collection.models import Book
 def index(request):
     # form = SearchForm()
     books = Book.objects.all()
+    address = "6 Ozark Court Durham North Carolina"
+    
 
     response = render(request, 'index.html', {
         'books': books,
+        'address': address, 
         # 'form': form,
     })
 
